@@ -55,13 +55,13 @@
 			(function changeParagraphText() {
 				let paragraphs = document.getElementsByTagName('p');
 				[...paragraphs].forEach((paragraph) => {
-					paragraph.innerText = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+					paragraph.innerText = 'abcdefghijklmnopqrstuvwxyzZ1234567890';
 				});
 			})();
 
 			(function changeMainContentColor() {
 				let mainContent = document.getElementsByClassName('main-content')[0];
-				mainContent.style.backgroundColor = 'rgb(76, 164, 109)';
+				mainContent.style.backgroundColor = 'rgb(9, 164, 109)';
 			})();
 
 			(function changeCenterContentColor() {
@@ -74,6 +74,13 @@
 			(function fixTitleText() {
 				let title = document.getElementsByClassName('title')[0];
 				title.innerText = 'Exercício 5.1 - JavaScript';
+			})();
+
+			(function changeParagraphTextToUpper() {
+				let paragraphs = document.getElementsByTagName('p');
+				[...paragraphs].forEach((paragraph) => {
+					paragraph.innerText = paragraph.innerText.toUpperCase();
+				});
 			})();
 		</script>
 	</body>
