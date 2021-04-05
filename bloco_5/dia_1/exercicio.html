@@ -82,6 +82,15 @@
 					paragraph.innerText = paragraph.innerText.toUpperCase();
 				});
 			})();
+
+			(function showTextOnConsole() {
+				let fullText = '';
+				let paragraphs = document.getElementsByTagName('p');
+				[...paragraphs].forEach((paragraph) => {
+					fullText += paragraph.innerText;
+				});
+				console.log(fullText);
+			})();
 		</script>
 	</body>
 </html>
