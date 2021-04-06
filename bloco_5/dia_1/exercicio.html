@@ -78,9 +78,7 @@
 
 			(function changeParagraphTextToUpper() {
 				let paragraphs = document.getElementsByTagName('p');
-				[...paragraphs].forEach((paragraph) => {
-					paragraph.innerText = paragraph.innerText.toUpperCase();
-				});
+				console.log([...paragraphs]);
 			})();
 
 			(function showTextOnConsole() {
