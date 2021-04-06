@@ -32,8 +32,11 @@
 
 		<script>
 			const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+			const pai = ondeVoceEsta.parentNode;
 			const primeiroFilhoDoFilho = ondeVoceEsta.firstElementChild;
 			primeiroFilhoDoFilho.textContent = 'Hey ya!';
+			const primeiroFilho = document.getElementById('pai').firstElementChild;
+			console.log(pai);
 		</script>
 	</body>
 </html>
