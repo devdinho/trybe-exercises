@@ -57,6 +57,15 @@ function redirectToPortfolio() {
 	open('https://devdinho.github.io/', '_blank');
 }
 
+// Desafio 4
+
+myWebpage.addEventListener('mouseover', changeBGColor);
+
+function changeBGColor(event) {
+	let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+	myWebpage.style.backgroundColor = '#' + randomColor;
+}
+
 function resetText(event) {
 	// O Event é passado como um parâmetro para a função.
 	event.target.innerText = 'Opção reiniciada';
