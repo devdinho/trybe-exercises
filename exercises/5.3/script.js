@@ -63,6 +63,13 @@ function createDaysOfTheMonth() {
 	const daysList = document.querySelector('#days');
 	dezDaysList.forEach((day) => {
 		let child = document.createElement('li');
+		child.classList.add('day');
+		if (/2[45]|31/.test(day)) {
+			child.classList.add('holiday');
+		}
+		if (/^4|1[18]|25$/.test(day)) {
+			child.classList.add('friday');
+		}
 		child.innerText = day;
 		daysList.appendChild(child);
 	});
