@@ -25,9 +25,20 @@ const myWebpage = document.getElementById('mySpotrybefy');
 
 const divs = [divUm, divDois, divTres];
 
+// Desafio 1
+
 divs.forEach((div) => {
 	div.addEventListener('click', addClass);
 });
+
+function addClass(event) {
+	divs.forEach((div) => {
+		div.classList.remove('tech');
+	});
+	event.target.classList.add('tech');
+}
+
+// Desafio 2
 
 input.addEventListener('input', addText);
 
@@ -38,11 +49,12 @@ function addText() {
 	techDiv.innerText = input.value;
 }
 
-function addClass(event) {
-	divs.forEach((div) => {
-		div.classList.remove('tech');
-	});
-	event.target.classList.add('tech');
+// Desafio 3
+
+myWebpage.addEventListener('dblclick', redirectToPortfolio);
+
+function redirectToPortfolio() {
+	open('https://devdinho.github.io/', '_blank');
 }
 
 function resetText(event) {
