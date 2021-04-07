@@ -98,3 +98,27 @@ btnHoliday.addEventListener('click', () => {
 		holiday.classList.toggle('active');
 	});
 });
+
+// Exercício 4
+
+function createFridayButton(str) {
+	const buttonsContainer = document.querySelector('.buttons-container');
+	let button = document.createElement('button');
+	button.id = 'btn-friday';
+	button.innerText = 'Sexta-feira';
+	buttonsContainer.appendChild(button);
+}
+
+createFridayButton('Sexta-feira');
+
+// Exercício 5
+
+// Exercício 6
+
+// Exercício 7
+
+// Exercício 8
+
+// Exercício 9
+
+// Exercício 10
