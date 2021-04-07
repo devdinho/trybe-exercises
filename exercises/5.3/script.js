@@ -87,3 +87,14 @@ function createHolidayButton(str) {
 }
 
 createHolidayButton('Feriados');
+
+// Exercício 3
+
+const btnHoliday = document.querySelector('#btn-holiday');
+
+btnHoliday.addEventListener('click', () => {
+	const holidays = document.querySelectorAll('.holiday');
+	holidays.forEach((holiday) => {
+		holiday.classList.toggle('active');
+	});
+});
