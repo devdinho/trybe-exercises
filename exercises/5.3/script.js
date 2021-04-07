@@ -113,6 +113,21 @@ createFridayButton('Sexta-feira');
 
 // Exercício 5
 
+const btnFriday = document.querySelector('#btn-friday');
+const days = [...document.querySelectorAll('.friday')].map(
+	(day) => day.innerText
+);
+
+btnFriday.addEventListener('click', () => {
+	document.querySelectorAll('.friday').forEach((day, i) => {
+		if (day.innerText == 'Mufasa!') {
+			day.innerText = days[i];
+		} else {
+			day.innerText = 'Mufasa!';
+		}
+	});
+});
+
 // Exercício 6
 
 // Exercício 7
