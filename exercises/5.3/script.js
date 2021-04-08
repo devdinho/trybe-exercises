@@ -171,3 +171,13 @@ tasksDiv.addEventListener('click', (e) => {
 });
 
 // Exercício 10
+
+daysList.forEach((day) => {
+	day.addEventListener('click', (e) => {
+		if (e.target.style.color == 'crimson') {
+			e.target.style.color = 'rgb(119, 119, 119)';
+		} else {
+			e.target.style.color = tasksDiv.style.backgroundColor;
+		}
+	});
+});
