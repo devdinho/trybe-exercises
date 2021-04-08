@@ -165,4 +165,9 @@ addLabelWithColor('crimson');
 
 // Exercício 9
 
+const tasksDiv = document.querySelector('.my-tasks div');
+tasksDiv.addEventListener('click', (e) => {
+	e.target.classList.toggle('selected');
+});
+
 // Exercício 10
