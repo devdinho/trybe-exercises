@@ -129,6 +129,7 @@ btnFriday.addEventListener('click', () => {
 });
 
 // Exercício 6
+
 const daysList = document.querySelectorAll('.day');
 daysList.forEach((day) => {
 	day.addEventListener('mouseenter', (e) => {
@@ -140,6 +141,15 @@ daysList.forEach((day) => {
 });
 
 // Exercício 7
+
+function addCustomTask(task) {
+	const myTasks = document.querySelector('.my-tasks');
+	let span = document.createElement('span');
+	span.innerText = task;
+	myTasks.appendChild(span);
+}
+
+addCustomTask('Task 1');
 
 // Exercício 8
 
