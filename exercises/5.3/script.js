@@ -181,3 +181,31 @@ daysList.forEach((day) => {
 		}
 	});
 });
+
+// Bônus
+const appointmentButton = document.querySelector('#btn-add');
+const taskInput = document.querySelector('#task-input');
+const inputContainer = document.querySelector('.input-container');
+
+appointmentButton.addEventListener('click', (e) => {
+	let taskValue = taskInput.value;
+	if (!taskValue) {
+		alert('Campo de compromisso deve ser preenchido!');
+	} else {
+		let parapgraph = document.createElement('p');
+		parapgraph.innerText = taskValue;
+		inputContainer.appendChild(parapgraph);
+	}
+});
+
+appointmentButton.addEventListener('keypress', (e) => {
+	let taskValue = taskInput.value;
+	let key = e.key;
+	if (key === 'Enter' && !taskValue) {
+		alert('Campo de compromisso deve ser preenchido!');
+	} else {
+		let parapgraph = document.createElement('p');
+		parapgraph.innerText = taskValue;
+		inputContainer.appendChild(parapgraph);
+	}
+});

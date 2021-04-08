@@ -57,6 +57,10 @@ li.holiday.active {
 	display: inline-block;
 }
 
+.input-container p {
+	line-height: 25px;
+}
+
 input {
 	margin-top: 8px;
 }
