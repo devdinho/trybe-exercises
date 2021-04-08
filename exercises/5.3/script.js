@@ -153,6 +153,16 @@ addCustomTask('Task 1');
 
 // Exercício 8
 
+function addLabelWithColor(color) {
+	const myTasks = document.querySelector('.my-tasks');
+	let div = document.createElement('div');
+	div.style.backgroundColor = color;
+	div.classList.add('task');
+	myTasks.appendChild(div);
+}
+
+addLabelWithColor('crimson');
+
 // Exercício 9
 
 // Exercício 10
