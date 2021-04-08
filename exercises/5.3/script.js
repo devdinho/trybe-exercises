@@ -129,6 +129,15 @@ btnFriday.addEventListener('click', () => {
 });
 
 // Exercício 6
+const daysList = document.querySelectorAll('.day');
+daysList.forEach((day) => {
+	day.addEventListener('mouseenter', (e) => {
+		e.target.classList.toggle('zoom');
+	});
+	day.addEventListener('mouseleave', (e) => {
+		e.target.classList.toggle('zoom');
+	});
+});
 
 // Exercício 7
 

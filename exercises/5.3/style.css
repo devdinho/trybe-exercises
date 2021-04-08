@@ -31,6 +31,14 @@ li.holiday.active {
 	margin: 0;
 }
 
+.day {
+	transition: 200ms ease;
+}
+
+.day.zoom {
+	transform: scale(1.6);
+}
+
 #days li {
 	color: #777;
 	display: inline-block;
