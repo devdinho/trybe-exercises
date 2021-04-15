@@ -1,4 +1,11 @@
 const statesContainer = document.querySelector('#states-container');
+const submitButton = document.querySelector('button[type="submit"]')
+
+submitButton.onclick = (e) => {
+  e.preventDefault();
+}
+
+console.log(submitButton);
 const URL = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
 
 (async function() {
