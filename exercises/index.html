@@ -11,28 +11,33 @@
     <fieldset>
       <legend>Dados Pessoais</legend>
       <label for="">Nome:</label>
-      <input type="text" maxlength="40" required>
+      <input type="text" maxlength="40" name="Nome" required>
       <label for="">Email:</label>
-      <input type="text" maxlength="50" required >
+      <input type="text" maxlength="50" name="Email" required >
       <label for="">CPF:</label>
-      <input type="text" maxlength="11" required >
+      <input type="text" maxlength="11" name="CPF" required >
       <label for="">Endereço:</label>
-      <input type="text" maxlength="200" required >
+      <input type="text" maxlength="200" name="Endereço" required >
       <label for="">Cidade:</label>
-      <input type="text" maxlength="28" required >
+      <input type="text" maxlength="28" name="Cidade" required >
       <label for="">Estado:</label>
-      <select name="" id="states-container" required></select>
+      <select name="Estado" id="states-container" required></select>
+      <p>Tipo:</p>
+      <label for="radio-casa">Casa</label>
+      <input id="radio-casa" name="Tipo" type="radio">
+      <label for="radio-apt">Apartamento</label>
+      <input id="radio-apt" name="Tipo" type="radio">
     </fieldset>
     <fieldset>
       <legend>Último Emprego</legend>
       <label for="">Resumo do Currículo:</label>
-      <textarea name="" id="" cols="30" rows="10" maxlength="1000" required></textarea>
+      <textarea name="Resumo do Currículo" id="" cols="30" rows="10" maxlength="1000" required></textarea>
       <label for="">Cargo:</label>
-      <input type="text" maxlength="40" required>
+      <input type="text" maxlength="40" name="Cargo" required>
       <label for="">Descrição do cargo:</label>
-      <textarea name="" id="" cols="30" rows="10" maxlength="500" required></textarea>
+      <textarea id="" cols="30" rows="10" name="Descrição do cargo" maxlength="500" required></textarea>
       <label for="">Data de início:</label>
-      <input type="text" required>
+      <input type="text" name="Data de início" required>
       <button type="submit">Enviar</button>
       <button id="reset-button">Limpar</button>
     </fieldset>

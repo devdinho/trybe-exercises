@@ -5,6 +5,10 @@ const resetButton = document.querySelector('#reset-button');
 
 submitButton.onclick = (e) => {
   e.preventDefault();
+  const formData = new FormData(forms)
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ': ' + pair[1]);
+  }
 }
 
 resetButton.onclick = (e) => {
