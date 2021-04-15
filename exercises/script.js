@@ -1,8 +1,15 @@
+const forms = document.querySelector('form');
 const statesContainer = document.querySelector('#states-container');
-const submitButton = document.querySelector('button[type="submit"]')
+const submitButton = document.querySelector('button[type="submit"]');
+const resetButton = document.querySelector('#reset-button');
 
 submitButton.onclick = (e) => {
   e.preventDefault();
+}
+
+resetButton.onclick = (e) => {
+  e.preventDefault();
+  forms.reset();
 }
 
 console.log(submitButton);
