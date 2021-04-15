@@ -5,6 +5,11 @@ const resetButton = document.querySelector('#reset-button');
 
 submitButton.onclick = (e) => {
   e.preventDefault();
+  
+  // [...forms.elements].forEach(element => {
+  //   console.log(element.name, element.value);
+  // })
+  
   const formData = new FormData(forms)
   for (var pair of formData.entries()) {
     console.log(pair[0] + ': ' + pair[1]);
