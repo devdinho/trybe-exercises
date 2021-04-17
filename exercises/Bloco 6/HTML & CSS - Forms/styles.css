@@ -8,11 +8,14 @@
 body {
   min-height: 100vh;
   display: flex;
+
 }
 
 form {
   margin: auto;
+  display: flex;
   width: 80%;
+  flex-direction: column;
 }
 
 textarea {
@@ -22,9 +25,10 @@ textarea {
 
 .fieldset {
   display: flex;
-  padding: 20px;
-  border: 2px solid grey;
+  padding: 20px 30px;
+  border: 1px solid grey;
   flex-direction: column;
+  border-radius: 4px;
 }
 
 .personal-info {
@@ -37,22 +41,42 @@ textarea {
   font-weight: bold;
 }
 
-.control-wrapper {
+.radio-control-wrapper {
   display: flex;
-  border: 1px solid;
+  /* border: 1px solid; */
   justify-content: space-around;
   align-items: center;
 }
 
-.control-wrapper * {
+.radio-control-wrapper * {
   margin: 0;
 }
 
-input , select {
-  padding: 6px;
+.button-control-wrapper {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+input , select , textarea {
+  padding: 8px;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+input:focus , select:focus , textarea:focus {
+  outline: none;
+  border: 2px solid skyblue;
+  border-radius: 2px;
 }
 
 button {
-  align-self: center;
-  flex: 0 1;
+  flex: 1;
+  padding: 16px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: seagreen;
+  border: 1px solid;
+  border-radius: 4px;
+  color: white
 }

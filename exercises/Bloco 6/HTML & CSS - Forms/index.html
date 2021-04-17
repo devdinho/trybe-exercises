@@ -24,7 +24,7 @@
       <label for="">Estado:</label>
       <select name="Estado" id="states-container" required></select>
       <label>Tipo:</label>
-      <div class="control-wrapper">
+      <div class="radio-control-wrapper">
         <label>Casa
           <input id="radio-casa" name="Tipo" type="radio">
         </label>
@@ -43,8 +43,10 @@
       <textarea id=""  name="Descrição do cargo" maxlength="500" required></textarea>
       <label for="">Data de início:</label>
       <input type="text" name="Data de início" required>
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar</button>
+      <div class="button-control-wrapper">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
     </fieldset>
   </form>
   <script src="script.js"></script>
