@@ -15,6 +15,11 @@ form {
   width: 80%;
 }
 
+textarea {
+  height: 180px;
+  resize: none;
+}
+
 .fieldset {
   display: flex;
   padding: 20px;
@@ -26,8 +31,21 @@ form {
   margin-bottom: 30px;
 }
 
-label {
-  margin: 8px 0;
+.fieldset > label {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.control-wrapper {
+  display: flex;
+  border: 1px solid;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control-wrapper * {
+  margin: 0;
 }
 
 input , select {
