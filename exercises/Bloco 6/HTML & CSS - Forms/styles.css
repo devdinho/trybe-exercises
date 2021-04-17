@@ -17,7 +17,6 @@ form {
   grid-gap: 40px;
   width: 75%;
   flex-wrap: wrap;
-  border: 1px solid #000;
 }
 
 textarea {
@@ -51,20 +50,24 @@ label:first-of-type {
   align-items: center;
 }
 
-.radio-control-wrapper * {
-  margin: 0;
-}
-
 .button-control-wrapper {
   display: flex;
   gap: 6px;
   margin-top: 10px;
 }
 
+input[type="radio"] {
+  vertical-align: middle;
+}
+
 input , select , textarea {
   padding: 8px;
   font-size: 1rem;
   overflow: hidden;
+}
+
+select:focus {
+  background-color: white;
 }
 
 input:focus , select:focus , textarea:focus {
