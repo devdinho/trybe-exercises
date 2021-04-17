@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <form action="" method="get">
-    <fieldset>
+    <fieldset class="fieldset personal-info">
       <legend>Dados Pessoais</legend>
       <label for="">Nome:</label>
       <input type="text" maxlength="40" name="Nome" required>
@@ -28,7 +29,7 @@
       <label for="radio-apt">Apartamento</label>
       <input id="radio-apt" name="Tipo" type="radio">
     </fieldset>
-    <fieldset>
+    <fieldset class="fieldset last-job">
       <legend>Último Emprego</legend>
       <label for="">Resumo do Currículo:</label>
       <textarea name="Resumo do Currículo" id="" cols="30" rows="10" maxlength="1000" required></textarea>

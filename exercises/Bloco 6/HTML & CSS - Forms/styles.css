@@ -2,9 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
   min-height: 100vh;
   display: flex;
+}
+
+form {
+  margin: auto;
+  width: 80%;
+}
+
+.fieldset {
+  display: flex;
+  padding: 20px;
+  border: 2px solid grey;
+  flex-direction: column;
+}
+
+.personal-info {
+  margin-bottom: 30px;
+}
+
+label {
+  margin: 8px 0;
+}
+
+input , select {
+  padding: 6px;
+}
+
+button {
+  align-self: center;
+  flex: 0 1;
 }
