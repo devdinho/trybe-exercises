@@ -14,6 +14,7 @@ body {
 form {
   margin: auto;
   display: flex;
+  grid-gap: 40px;
   width: 75%;
   flex-wrap: wrap;
   border: 1px solid #000;
@@ -34,14 +35,14 @@ textarea {
   border-radius: 4px;
 }
 
-.personal-info {
-  margin-bottom: 30px;
-}
-
 .fieldset > label {
   margin-top: 16px;
   margin-bottom: 4px;
   font-weight: bold;
+}
+
+label:first-of-type {
+  margin-top: 0;
 }
 
 .radio-control-wrapper {
