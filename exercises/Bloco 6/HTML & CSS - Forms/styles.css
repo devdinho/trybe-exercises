@@ -14,8 +14,9 @@ body {
 form {
   margin: auto;
   display: flex;
-  width: 80%;
-  flex-direction: column;
+  width: 75%;
+  flex-wrap: wrap;
+  border: 1px solid #000;
 }
 
 textarea {
@@ -25,6 +26,8 @@ textarea {
 
 .fieldset {
   display: flex;
+  flex-grow: 1;
+  min-width: 400px;
   padding: 20px 30px;
   border: 1px solid grey;
   flex-direction: column;
@@ -43,7 +46,6 @@ textarea {
 
 .radio-control-wrapper {
   display: flex;
-  /* border: 1px solid; */
   justify-content: space-around;
   align-items: center;
 }
