@@ -41,12 +41,6 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-container {
-    flex-grow: 1;
-  }
-}
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -55,6 +49,7 @@ body {
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
@@ -97,4 +92,10 @@ body {
 .aside-container p {
   margin: 10px 0;
   text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    flex-grow: 1;
+  }
 }
