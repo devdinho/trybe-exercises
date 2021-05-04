@@ -36,6 +36,10 @@ const battleMembers = { mage, warrior, dragon };
     (Ex: "Não possui mana suficiente") e a mana gasta é 0.
 */
 
+const dragonDamage = () => {
+  const min = 15;
+  return Math.floor(Math.random() * (dragon.strength - min + 1)) + min;
+};
 
 const gameActions = {
   // Crie as HOFs neste objeto.
