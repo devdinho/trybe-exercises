@@ -41,6 +41,11 @@ const dragonDamage = () => {
   return Math.floor(Math.random() * (dragon.strength - min + 1)) + min;
 };
 
+const warriorDamage = () => {
+  const min = warrior.strength;
+  return Math.floor(Math.random() * (min * warrior.weaponDmg - min + 1)) + min;
+};
+
 const gameActions = {
   // Crie as HOFs neste objeto.
 };
